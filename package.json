@@ -2,6 +2,7 @@
   "name": "jsfi-apollo-server",
   "main": "./app/index.js",
   "scripts": {
+    "start": "concurrently \"npm:start-service-*\" \"npm:start-app\"",
     "start-app": "nodemon app/index.js",
     "start-gateway": "nodemon gateway.js",
     "start-service-oc-apps": "nodemon --ignore 'services/apps/apps.json' services/apps/index.js",
