@@ -1,10 +1,10 @@
 const express = require("express");
-const bodyParser = require("body-parser");
+// const bodyParser = require("body-parser");
 const { ApolloServer } = require("apollo-server-express");
 
 const app = express();
 
-app.use(bodyParser.json());
+// app.use(bodyParser.json());
 
 const gateway = require("./gateway");
 
