@@ -59,20 +59,16 @@ const root = async options => ({
 });
 
 const getComponents = async () => {
-  try {
-    const config = {
-      baseUrl:
-        process.env.NODE_ENV === "production"
-          ? "https://fibabanka-apps.herokuapp.com/"
-          : "http://localhost:3030/"
-    };
+  const config = {
+    baseUrl:
+      process.env.NODE_ENV === "production"
+        ? "https://fibabanka-apps.herokuapp.com/"
+        : "http://localhost:3030/"
+  };
 
-    const response = await root(config);
-    // const registry = await response.registry();
-    await response.components();
-  } catch (ex) {
-    console.error(ex);
-  }
+  const response = await root(config);
+  // const registry = await response.registry();
+  await response.components();
 };
 
 const getDbData = () => {
