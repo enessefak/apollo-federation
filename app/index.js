@@ -15,7 +15,9 @@ const server = new ApolloServer({
   engine: true,
 
   // Subscriptions are unsupported but planned for a future Gateway version.
-  subscriptions: false
+  subscriptions: false,
+  introspection: true,
+  playground: true
 });
 
 server.applyMiddleware({ app });
