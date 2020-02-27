@@ -6,10 +6,10 @@ const gateway = new ApolloGateway({
   // using a single source of truth to compose a schema is recommended and
   // prevents composition failures at runtime using schema validation using
   // real usage-based metrics.
-  serviceList: [{ name: "oc-apps", url: "http://localhost:4001" }],
+  serviceList: [{ name: "oc-apps", url: "http://localhost:4001/graphql" }],
 
   // Experimental: Enabling this enables the query plan view in Playground.
-  __exposeQueryPlanExperimental: false
+  __exposeQueryPlanExperimental: true
 });
 
 module.exports = gateway;
