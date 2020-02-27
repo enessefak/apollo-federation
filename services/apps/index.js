@@ -62,7 +62,7 @@ const getComponents = async () => {
   try {
     const config = {
       baseUrl:
-        process.NODE_ENV === "production"
+        process.env.NODE_ENV === "production"
           ? "https://fibabanka-apps.herokuapp.com/"
           : "http://localhost:3030/"
     };
