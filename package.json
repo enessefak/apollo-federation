@@ -2,16 +2,12 @@
   "name": "jsfi-apollo-server",
   "main": "./app/index.js",
   "scripts": {
-    "start": "node ./services/apps --unhandled-rejections=strict & node ./app --unhandled-rejections=strict",
     "start-app": "nodemon app/index.js",
     "start-gateway": "nodemon gateway.js",
     "start-service-oc-apps": "nodemon --ignore 'services/apps/apps.json' services/apps/index.js",
     "start-services": "concurrently \"npm:start-service-*\"",
     "postinstall": "lerna bootstrap",
     "clean": "lerna clean"
-  },
-  "dependencies": {
-    "concurrently": "latest"
   },
   "devDependencies": {
     "concurrently": "latest",

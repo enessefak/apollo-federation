@@ -50,5 +50,13 @@
     ],
     "version": "1.0.1",
     "publishedVersion": "1.0.0"
+  },
+  "oc-call-to-action": {
+    "name": "oc-call-to-action",
+    "allVersions": [
+      "1.0.0"
+    ],
+    "version": "1.0.0",
+    "publishedVersion": "1.0.0"
   }
 }
