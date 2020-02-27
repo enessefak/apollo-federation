@@ -63,7 +63,7 @@ const getComponents = async () => {
     baseUrl:
       process.env.NODE_ENV === "production"
         ? "https://fibabanka-apps.herokuapp.com/"
-        : "http://fibabanka-apps.herokuapp.com/"
+        : "https://fibabanka-apps.herokuapp.com/"
   };
 
   const response = await root(config);
