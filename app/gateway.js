@@ -9,7 +9,7 @@ const gateway = new ApolloGateway({
   serviceList: [{ name: "oc-apps", url: "http://localhost:4001/graphql" }],
 
   // Experimental: Enabling this enables the query plan view in Playground.
-  __exposeQueryPlanExperimental: true
+  __exposeQueryPlanExperimental: false
 });
 
 module.exports = gateway;

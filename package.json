@@ -2,7 +2,7 @@
   "name": "jsfi-apollo-server",
   "main": "./app/index.js",
   "scripts": {
-    "start": "npm run start-services && npm run start-app",
+    "start": "lerna run start",
     "start-app": "nodemon app/index.js",
     "start-gateway": "nodemon gateway.js",
     "start-service-oc-apps": "nodemon --ignore 'services/apps/apps.json' services/apps/index.js",
