@@ -5,6 +5,9 @@ const low = require("lowdb");
 const FileSync = require("lowdb/adapters/FileSync");
 const path = require("path");
 
+const services = require("../../services.json");
+const port = services["oc-apps"].port;
+
 const adapter = new FileSync(path.join(__dirname, "apps.json"));
 const db = low(adapter);
 
@@ -142,6 +145,6 @@ const server = new ApolloServer({
   ])
 });
 
-server.listen({ port: 4001 }).then(({ url }) => {
+server.listen({ port }).then(({ url }) => {
   console.log(`🚀 Server ready at ${url}`);
 });
